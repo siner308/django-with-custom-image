@@ -1,5 +1,6 @@
 # django-with-custom-image
 
+```bash
 virtualenv -p python3 venv<br>
 source venv/bin/activate<br>
 pip install django<br>
@@ -25,3 +26,4 @@ docker run -d -p 8000:8000 --name my_docker_django dockerdjango:latest
 
 // docker ps -a<br>
 // docker logs -f dockerdjdango
+```
