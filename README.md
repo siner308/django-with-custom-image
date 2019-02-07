@@ -1,0 +1,1 @@
+# django-with-custom-image
