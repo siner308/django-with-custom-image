@@ -1,29 +1,29 @@
 # django-with-custom-image
 
 ```bash
-virtualenv -p python3 venv<br>
-source venv/bin/activate<br>
-pip install django<br>
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install django
 django-admin startproject dockerdjango
 
 cd dockerdjango
 
 python manage.py startapp blog
 
-vi Dockerfile<br>
+vi Dockerfile
 vi entrypoint.sh
 
-vi dockerdjango/settings.py<br>
+vi dockerdjango/settings.py
 vi dockerdjango/urls.py
 
-mkdir -p blog/templates/blog<br>
-vi blog/templates/blog/index.html<br>
+mkdir -p blog/templates/blog
+vi blog/templates/blog/index.html
 vi blog/views.py
 
-docker build -t dockerdjango .<br>
+docker build -t dockerdjango .
 docker run -d -p 8000:8000 --name my_docker_django dockerdjango:latest
 
 
-// docker ps -a<br>
+// docker ps -a
 // docker logs -f dockerdjdango
 ```
