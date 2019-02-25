@@ -10,7 +10,7 @@ cd dockerdjango
 python manage.py startapp blog
 
 vi Dockerfile
-vi entrypoint.sh
+vi start
 
 vi dockerdjango/settings.py
 vi dockerdjango/urls.py
@@ -20,8 +20,10 @@ vi blog/templates/blog/index.html
 vi blog/views.py
 
 docker build -t dockerdjango .
-docker run -d -p 8000:8000 --name my_docker_django dockerdjango:latest
+docker run -d -p 8000:8000 --name dockerdjango dockerdjango:latest
 
+docker login
+docker tag dockerdjango:latest aan308/dockerdjango:latest
+docker push aan308/dockerdjango:latest
 
-// docker ps -a
-// docker logs -f dockerdjdango
+docker run -d -p 8000:8000 --name dockerdjango aan308/dockerdjango:latest

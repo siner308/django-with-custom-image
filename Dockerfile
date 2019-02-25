@@ -1,10 +1,17 @@
-FROM python:3
-ENV PYTHONUNBUFFERED 1
-RUN mkdir /code
-WORKDIR /code
-COPY requirements.txt /code/
-RUN pip install -r requirements.txt
-COPY . /code/
-RUN chmod 755 /code/entrypoint.sh
+FROM python:3.6
 
-CMD ./entrypoint.sh
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app
+
+RUN pip install -r /app/requirements.txt
+
+RUN chmod 755 /app/start
+
+WORKDIR /app
+EXPOSE 8000
+
+ENTRYPOINT ["/app/start"]
