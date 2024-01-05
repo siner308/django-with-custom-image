@@ -1,7 +1,8 @@
 repo_name: siner308/django-with-custom-image
 report_id: 2cab54645465429a9f0a997b1fa78bac
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-15T10:22:48+00:00'
+timestamp: '2024-01-05T08:40:24+00:00'
 requested_by: siner308
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/siner308/django-with-custom-image
   detection_source: Repo Metadata
 - name: Django
   description: The Web framework for perfectionists with deadlines
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/994/4aGjtNQv.png
+  detection_source_url: https://github.com/siner308/django-with-custom-image/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: siner308
   last_updated_on: 2019-02-07 16:02:59.000000000 Z
@@ -38,6 +41,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/siner308/django-with-custom-image
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -47,6 +51,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/siner308/django-with-custom-image
   detection_source: Repo Metadata
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
@@ -57,4 +62,5 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/siner308/django-with-custom-image
   detection_source: Repo Metadata
